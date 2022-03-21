@@ -11,10 +11,11 @@
     justify-content: center;
     align-items: center;
     height: 300px;
-    background-color: #005dcf;
+    background-color: #f2ecd1;
     /* text-align: center; */
+    font-family: serif;
     font-size: 85px;
-    color: #ff9200;
+    color: #f7501d;
 }
 .boxB {
     display: flex;
@@ -23,6 +24,7 @@
     height: 200px;
     /* text-align: center; */
     background-color: #eee;
+    font-family: serif;
     font-size: 25px;
 }
 .boxC {
@@ -32,6 +34,7 @@
     height: 200px;
     /* text-align: center; */
     background-color: #ccc;
+    font-family: serif;
     font-size: 25px;
 }
 .boxD {
@@ -41,6 +44,7 @@
     height: 200px;
     /* text-align: center; */
     background-color: #ccc;
+    font-family: serif;
     font-size: 25px;
 }
 .boxE {
@@ -50,6 +54,7 @@
     height: 200px;
     /* text-align: center; */
     background-color: #eee;
+    font-family: serif;
     font-size: 25px;
 }
 h1 {
@@ -64,10 +69,25 @@ p {
     text-align: center;
 }
 .orange {
-    color: #ff9200;
+    font-family: serif;
+    color: #f7501d;
 }
-.blue {
-    color: #005dcf;
+#profile img {
+    order-radius: 50%;
+    width: 300px;
+    height: 300px;
+    margin-right: 80px;
+}
+div#profile {
+    width: 790px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.beige {
+    font-family: serif;
+    color: #e8dabd;
 }
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   color: #aca49c;
@@ -85,4 +105,18 @@ input::-moz-placeholder, textarea::-moz-placeholder {
 
 input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
   color: #bbb5af;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 30px;
+    color: #f7501d;
+}
+form#form {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    width: 500px;
+    margin-left: 300px;
 }
