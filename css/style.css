@@ -150,12 +150,7 @@ div#profile {
     color: #e8dabd;
 }
 
-/* スマホ 縦からは */
-@media screen and (max-width: 480px){
-    .boxA {
-        font-size: 30px;
-    }
-}
+
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   color: #aca49c;
   font-size: 0.875em;
