@@ -238,14 +238,14 @@ ul li {
 a img {
     width: 100%;
 }
-/*.col-sm-12 boxA {*/
-/*    opacity: 0;*/
-/*    perspective: 200px;*/
-/*}*/
-/*.col-sm-12 boxA span {*/
-/*    transform: rotateY(-90deg);*/
-/*    opacity: 0;*/
-/*}*/
+.col-sm-12 boxA {
+    opacity: 0;
+    perspective: 200px;
+}
+.col-sm-12 boxA span {
+    transform: rotateY(-90deg);
+    opacity: 0;
+}
 /* パソコン、タブレット */
 
 
