@@ -9,17 +9,10 @@
   </head>
   <body>
     <div class="container">
-      <div class="row">
+      <div class="row pt-1">
         <div class="col-sm-12 boxA">Self-Introduction Sheet</div>
       </div>
-      
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script src="textyleF.min.js"></script>
-		<script>
-  		
-		</script>
-      
-      <div class="row boxB">
+      <div class="row boxB mb-1">
         <div class="col-sm-6">
           <p>
           <a href="#a">About me</a>
@@ -46,15 +39,14 @@
           </p>
           <img src="images/enthusiasm.jpg" alt="enthusiasm.jpg">
         </div>
-      </div>
     </div>
-    <section id="about">
-      <h1 class="orange">
+    <div id="about" class="row mt-2">
+      <h2 class="orange col-sm-12">
         <a id="a">~About me~</a>
-      </h1>
-      <div id="profile">
-        <img src="images/profile.jpg" alt="profile.jpg">
-        <div>
+      </h2>
+      <div id="profile" class="col-sm-12 row">
+        <img src="images/profile.jpg" alt="profile.jpg" class="col-sm-5">
+        <div class="col-sm-7">
           <p>商業高校卒業後、上田安子服飾専門学校ファッションビジネス学科を進学しました。 
           <br>専門学校卒業後、earth music &ecologyを展開している株式会社ストライプインターナショナルに2019年新卒で入社しました。 
           <br>約4年間勤務しました。その間副店長に昇格し、部下の育成、売上を取るための工夫・店舗の傾向など研究し実践していきました。 
@@ -64,13 +56,14 @@
           <br>作成したポートフォリオは下に記載しておりますので、是非見てください。 
         </div>
       </div>
-    </section>
-    <section id="it">
-      <h1 class="orange">
+    </div>
+    <div id="it" class="row">
+      <h2 class="orange col-sm-12">
         <a id="i">~Why IT~</a>
-      </h1>
-      <div>
-        <p>今の時代、これからの時代にかかせない業界だと思ったからです。 
+      </h2>
+    </div>
+    <div class="row p-3">
+        <p class="col-sm-12">今の時代、これからの時代にかかせない業界だと思ったからです。 
         <br>私はIT業界を色々な業界の1番先頭にいると思っています。 
         <br>どの会社・企業でも必ず必要で、なくてはならないものです。 
         <br>そういった職種は珍しく、会社だけでなく、様々な人たち、大きくいうと世界が必要としているITに私も携わりたいという思いが強くなりました。 
@@ -79,17 +72,17 @@
         <br>長く続けても成長し続けられるというのはとても大事なことで私の中でも1番大事なことです。 
         <br>この2つが特に魅力を感じた理由です。 
         </p>
-      </div>
-    </section>
-    <section>
-      <h1 class="orange">
+    </div>
+    <div class="row">
+      <h1 class="orange col-sm-12">
         <a id="p">~Portfolio~</a>
       </h1>
-      <div class="skill">
-        <h2>My skills</h2>
-        <p>
-        </p>
-        <ul>
+    </div>
+      <div class="row skill">
+        <h2 class="col-sm-12">My skills</h2>
+      </div>
+      <div class="row">
+        <ul class="col-sm-12">
           <li>
             <a href="https://nakagawamizuki.github.io/restaurant/">
               <img src="images/portfolio_1.png" alt="ポートフォリオ1">
@@ -113,33 +106,45 @@
           </li>
         </ul>
       </div>
-    </section>
-    <section>
+    <section class="row">
       <h1 class="orange">
         <a id="e">~Enthusiasm~</a>
       </h1>
-      <div>
-        <p>この仕事で会社・社会に貢献していきたい、自分を高めて成長していきたい気持ちは誰にも負けません。 
-        <br>皆様の技術には足元にも及ばないですが、その中でも自分のできることを見つけ精一杯行っていきます。 
-        <br>皆様のお力をお借りすることが多いと思いますが、これまで学んだことを実践、これから学ぶことをしっかり身につけていきます。 
-        <br>そして一日でも早く会社、皆様に貢献できる技術者になるように努力していきます。 
-        </p>
-      </div>
     </section>
-    <section class="get-in-touch">
-      <header>
-        <h1>~Contact Form~</h1>
-      </header>
-      <form id="form" class="topBefore">
-        <input id="name" type="text" placeholder="NAME">
-        <input id="email" type="text" placeholder="E-MAIL">
-        <textarea id="message" placeholder="MESSAGE"></textarea>
-        <input id="submit" type="submit" value="Send">
-      </form>
+    <div class="row mt-2 p-3">
+      <p class="col-sm-12">この仕事で会社・社会に貢献していきたい、自分を高めて成長していきたい気持ちは誰にも負けません。 
+      <br>皆様の技術には足元にも及ばないですが、その中でも自分のできることを見つけ精一杯行っていきます。 
+      <br>皆様のお力をお借りすることが多いと思いますが、これまで学んだことを実践、これから学ぶことをしっかり身につけていきます。 
+      <br>そして一日でも早く会社、皆様に貢献できる技術者になるように努力していきます。 
+      </p>
+    </div>
+    <section class="get-in-touch row mt-2">
+        <h1 class="col-sm-12">~Contact Form~</h1>
     </section>
-    
-    
-    
-    <footer>&copy; 2022 Profile Site </footer>
+    <form id="form" class="topBefore row">
+      <input id="name" type="text" placeholder="NAME">
+      <input id="email" type="text" placeholder="E-MAIL">
+      <textarea id="message" placeholder="MESSAGE"></textarea>
+      <input id="submit" type="submit" value="Send">
+    </form>
+    <footer class="row mt-4"><small class="col-sm-12 text-center">&copy; 2022 Profile Site</small></footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="textyleF.min.js"></script>
+    <!--<script>-->
+    <!--  $(function(){-->
+    <!--    $('.col-sm-12 boxA').textyleF({-->
+    <!--      duration : 2000,-->
+    <!--      delay : 200,-->
+    <!--      easing : 'cubic-bezier(0.785, 0.135, 0.15, 0.86)',-->
+    <!--      callback : function(){-->
+    <!--              $(this).css({-->
+    <!--                transition : '1s',-->
+    <!--              });-->
+    <!--      }-->
+    <!--    });-->
+              
+    <!--  });-->
+    <!--</script>-->
   </body>
 </html>

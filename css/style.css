@@ -145,12 +145,17 @@ p {
     margin-bottom: 20px;
     font-family: serif;
     color: #f7501d;
+    font-size: 35px;
+    margin-top: 30px;
 }
 #profile img {
     border-radius: 50%;
-    width: 300px;
-    height: 300px;
-    margin-right: 80px;
+    width: 100%;
+    /*height: 300px;*/
+    /*margin-right: 80px;*/
+}
+#profile div {
+    margin-top: 35px;
 }
 div#profile {
     width: 790px;
@@ -173,13 +178,17 @@ div#profile {
     justify-content: space-between;
     list-style-type: none;
     width: 100%;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 li {
     width: 40%;
     text-align: center;
 }
 
+h1.col-sm-12 {
+    color: #f7501d;
+    font-family: serif;
+}
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   color: #aca49c;
   font-size: 0.875em;
@@ -218,6 +227,25 @@ footer {
     text-align: center;
     font-size: 10px;
 }
+ul {
+    display: flex;
+    justify-content: spece-between;
+    list-style-type: none;
+}
+ul li {
+    width: 30%;
+}
+a img {
+    width: 100%;
+}
+/*.col-sm-12 boxA {*/
+/*    opacity: 0;*/
+/*    perspective: 200px;*/
+/*}*/
+/*.col-sm-12 boxA span {*/
+/*    transform: rotateY(-90deg);*/
+/*    opacity: 0;*/
+/*}*/
 /* パソコン、タブレット */
 
 
@@ -240,21 +268,99 @@ footer {
 }
 /* スマホ　縦からは */
 @media screen and (max-width: 480px){
-    
+    /*html {*/
+    /*    width: 100vw;*/
+    /*}*/
 }
 @media screen and (max-width: 600px){
+    *{
+        position: static !important;
+    }
     html {
-        width: 100vw;
+        width: 100vw !important;
     }
     body {
-        width: 100vw;
+        width: 100vw !important;
     }
     div {
-        width: 100vw;
+        width: 100vw !important;
     }
     section {
-        width: 100vw;
+        width: 100vw !important;
     }
-    
+    footer {
+        width: 100vw !important;
+    }
+    .col-sm-12.boxA {
+    font-size: 37px !important;
+    height: 100px;
+    }
+    .boxB {
+        /*flex-direction: column;*/
+        padding: 0;
+        height: auto;
+    }
+    .boxB .col-sm-6 {
+        height: 250px;
+        position: relative !important;
+        margin-bottom: 15px;
+    }
+    .boxB .col-sm-6 p {
+        position: absolute !important;
+        top: 100px;
+    }
+    .boxB img {
+        width: 100%;
+    }
+    .boxD {
+    padding: 0;
+    height: auto;
+    }
+    .boxD p {
+    position: absolute !important;
+    top: 116px;
+    left: 9px;
+    }
+    .boxD .col-sm-6 {
+    height: auto;
+    position: relative !important;
+    margin-bottom: 16px;
+    }
+    .boxD img {
+    width: 100%;
+    height: 250px;
+    }
+    .skill ul {
+        flex-direction: column;
+    }
+    .skill img {
+        width: 100vw;
+        height: auto !important;
+    }
+    #profile img {
+        width: 300px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    .orange {
+        font-size: 36px;
+    }
+    ul {
+        flex-direction: column;
+    }
+    ul li {
+        width: 100%;
+    }
+    ul li img {
+        width: 100%;
+    }
+    form#from {
+        display: flex;
+        flex-flow: column;
+        width: 100%;
+        margin: 0 auto;
+    }
+
     
 }   
