@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>中川瑞希PortfolioSite</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/textyleF.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -127,24 +128,12 @@
       <textarea id="message" placeholder="MESSAGE"></textarea>
       <input id="submit" type="submit" value="Send">
     </form>
-    <footer class="row mt-4"><small class="col-sm-12 text-center">&copy; 2022 Profile Site</small></footer>
+    <footer class="row mt-4">
+      <small class="col-sm-12 text-center">&copy; 2022 Profile Site</small>
+    </footer>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="portfolio_jquery.js"></script>
-    <script>
-      $(function(){
-        $('.col-sm-12 boxA').textyleF({
-          duration : 2000,
-          delay : 200,
-          easing : 'cubic-bezier(0.785, 0.135, 0.15, 0.86)',
-          callback : function(){
-                  $(this).css({
-                    transition : '1s',
-                  });
-          }
-        });
-              
-      });
-    </script>
+    <script src="js/textyleF.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
