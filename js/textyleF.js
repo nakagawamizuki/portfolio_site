@@ -54,6 +54,21 @@
                 }
             });
         });
+        validate(){
+            $('span').remove();
+            
+            let flag = true;
+            if(this.name === ''){
+                $('input[id="name"]').after($('<span>', {text: '名前を入力してください'}))；
+                flag = false;
+            }
+            
+            if(this.email === ''){
+                $('input[id="email"]').after($('<span>', {text: '正しく入力してください'}));
+            }
+            $('span').addClass('error');
+            return flag;
+        }
     };
     
     let image_witdh;
