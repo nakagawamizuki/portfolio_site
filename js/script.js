@@ -37,12 +37,12 @@ $(function(){
             }
         }
         
-        $('#submit').on('click', () => {
+        $('#submit').on('click', (e) => {
             e.preventDefault();
             const name = $('input[id="name"]').val();
-            const email = $('input[1d="mailaddress"]').val();
+            const mailaddress = $('input[1d="mailaddress"]').val();
             const message = $('input[id="message"]').val();
-            const contact = new Contact(name, email, message);
+            const contact = new Contact(name, mailaddress, message);
             
             let flag = contact.validate();
             
@@ -53,26 +53,19 @@ $(function(){
                 
                 // Ajax
                 $.ajax({
-                   type: 'post',
+                   type: 'POST',
                    url: 'mail.php',
-                   datatype: '',
+                   datatype: 'json',
                    data: {
-                       name: $('#name').val(),
-                       email: $('#mailaddress').val(),
-                       message: $('#message').val()
+                       name: contact.name,
+                       mailaddress: contact.mailaddress,
+                       message: contact.message
                    }
-                }).done(function(data){ //ajax通信が成功したら
-                    if(data.result){
-                        //メール送信に成功した時の処理
-                        //画面にメッセージを表示、画面をリロードなど
-                    }else{
-                        //メール送信に失敗した時の処理
-                        
-                        //画面にメッセージを表示など
-                    }
+                }).done(function(data){
+                    alert(data);
+                }).fail(function(data){
+                    alert(error);
                 });
-            }else{
-                console.log('入力ミス');
             }
         });
         
