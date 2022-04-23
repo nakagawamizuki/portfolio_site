@@ -12,11 +12,11 @@
         
         //フォームの内容が空でなければメールを送信する
         if(!empty($from) && !empty($subject) && !empty($description)){
-            md_language("Japanese");
-            md_internal_encoding("UTF-8");
+            mb_language("Japanese");
+            mb_internal_encoding("UTF-8");
             
             //メール送信
-            $result = md_send_mail($to, $subject, $description, "From:".$from);
+            $result = mb_send_mail($to, $subject, $description, "From:".$from);
             
             //送信結果を判定
             if($result){

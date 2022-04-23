@@ -20,13 +20,13 @@ $(function(){
                     $('input[id="name"]').before($('<span>', {text: '名前を入力してください'}));
                     flag = false;
                 }
-                if(this.email === ''){
+                if(this.mailaddress === ''){
                     $('input[id="mailaddress"]').before($('<span>', {text: 'メールアドレスを入力してください'}));
                     flag = false;
-                }else if(!/^[A-Za-z0-9]{1}[A-Za-z0-9_.-]*@{1}[A-Za-z0-9_.-]+.[A-Za-z0-9]+$/.test(this.email)){
+                }else if(!/^[A-Za-z0-9]{1}[A-Za-z0-9_.-]*@{1}[A-Za-z0-9_.-]+.[A-Za-z0-9]+$/.test(this.mailaddress)){
                     $('input[id="mailaddress"]').before($('<span>', {text: 'メールアドレスを正しく入力してください'}));
-                    flag =false;
-                    $('input[name="mailaddress"]').val('');
+                    flag = false;
+                    $('input[id="mailaddress"]').val('');
                 }
                 if(this.message === ''){
                     $('input[id="message"]').before($('<span>', {text: 'メッセージを入力してください'}));
@@ -40,7 +40,7 @@ $(function(){
         $('#submit').on('click', (e) => {
             e.preventDefault();
             const name = $('input[id="name"]').val();
-            const mailaddress = $('input[1d="mailaddress"]').val();
+            const mailaddress = $('input[id="mailaddress"]').val();
             const message = $('input[id="message"]').val();
             const contact = new Contact(name, mailaddress, message);
             
@@ -51,10 +51,9 @@ $(function(){
                 $('input').val('');
                 $('textarea').val('');
                 
-                // Ajax
                 $.ajax({
                    type: 'POST',
-                   url: 'mail.php',
+                   url: 'PHP/mail.php',
                    datatype: 'json',
                    data: {
                        name: contact.name,
