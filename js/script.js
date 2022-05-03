@@ -29,7 +29,7 @@ $(function(){
                     $('input[id="mailaddress"]').val('');
                 }
                 if(this.message === ''){
-                    $('input[id="message"]').before($('<span>', {text: 'メッセージを入力してください'}));
+                    $('textarea[id="message"]').before($('<span>', {text: 'メッセージを入力してください'}));
                     flag = false;
                 }
                 $('span').addClass('error');
@@ -41,8 +41,9 @@ $(function(){
             e.preventDefault();
             const name = $('input[id="name"]').val();
             const mailaddress = $('input[id="mailaddress"]').val();
-            const message = $('input[id="message"]').val();
+            const message = $('textarea[id="message"]').val();
             const contact = new Contact(name, mailaddress, message);
+            console.log(contact);
             
             let flag = contact.validate();
             
@@ -61,9 +62,15 @@ $(function(){
                        message: contact.message
                    }
                 }).done(function(data){
-                    alert(data);
+                    console.log(data['result']);
+                    if(data['result']) {
+                        alert(contact.name + "さんのメッセージが送信されました");
+                    }else{
+                        alert(contact.name + "さんのメッセージの送信に失敗しました");
+                    }
                 }).fail(function(data){
-                    alert(error);
+                    console.log(data['result']);
+                    alert(contact.name + "さんのメッセージの送信に失敗しました");
                 });
             }
         });

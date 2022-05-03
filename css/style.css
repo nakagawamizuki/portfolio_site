@@ -164,7 +164,7 @@ p {
 }
 
 .orange {
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     font-family: serif;
     color: #f7501d;
     font-size: 35px;
@@ -207,6 +207,10 @@ div#profile {
     list-style-type: none;
     width: 100%;
     margin-top: 20px;
+}
+
+.row.skill {
+    margin-bottom: 5px;
 }
 
 li {
@@ -371,7 +375,7 @@ p.col {
     }
     body {
     width: 100vw !important;
-    padding-left: 10px;
+    padding-left: 13px;
     }
     div {
         width: 100vw !important;
@@ -463,5 +467,8 @@ p.col {
     }
     #to_i {
         width: 10%;
+    }
+    .br {
+        display: none;
     }
 }   
