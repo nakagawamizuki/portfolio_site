@@ -300,7 +300,6 @@ h2.col-sm-12 {
 div#wrapper {
     width: 95%;
     margin: 0 auto;
-    margin-top: 20px;
     padding: 30px;
 }
 
@@ -330,6 +329,7 @@ div#wrapper {
     bottom: 25px;
 }
 p.col {
+    margin-bottom: 5px;
     color: #f7501d;
 }
 
@@ -368,6 +368,7 @@ p.col {
 
 @media screen and (max-width: 600px){
     *{
+        float: none !important; 
         position: static !important;
     }
     html {
@@ -375,7 +376,7 @@ p.col {
     }
     body {
     width: 100vw !important;
-    padding-left: 13px;
+    margin: 0 auto;
     }
     div {
         width: 100vw !important;
@@ -465,10 +466,18 @@ p.col {
     btn btn-success w-30 {
         width: 30%;
     }
-    #to_i {
-        width: 10%;
-    }
+    /*#to_i {*/
+    /*    width: 10%;*/
+    /*}*/
     .br {
-        display: none;
+    display: contents;
+    }
+    div#wrapper {
+    padding: 10px;
+    margin: 0 auto;
+    margin-left: -15px;
+    }
+    footer.row.mt-4 {
+    margin-bottom: 0px;
     }
 }   
